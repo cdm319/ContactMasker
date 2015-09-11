@@ -1,0 +1,13 @@
+# MFA Git Ignore List
+
+# Generated Java files
+*.class
+build/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# OS X / Windows files
+*.DS_Store
+Thumbs.db
