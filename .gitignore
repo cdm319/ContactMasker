@@ -1,4 +1,7 @@
-# MFA Git Ignore List
+# ContactMasker Git Ignore List
+
+# Gradle Files
+.gradle/
 
 # Generated Java files
 *.class
