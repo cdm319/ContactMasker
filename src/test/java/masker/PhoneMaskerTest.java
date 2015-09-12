@@ -3,6 +3,7 @@ package masker;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -12,6 +13,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * 09 September 2015
  */
 public class PhoneMaskerTest {
+
+    @Test
+    public void testClassCanBeInstantiated() throws Exception {
+        // This is really for coverage report (cobertura) purposes
+        PhoneMasker pm = new PhoneMasker();
+        assertThat(pm, instanceOf(PhoneMasker.class));
+    }
 
     @Test
     public void testMaskPhoneNumberWithValidUkMobile() throws Exception {

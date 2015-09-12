@@ -20,11 +20,11 @@ public class EmailMasker {
             String domain = matcher.group("domain");
             String maskedName;
 
-            if (name.length() == 1) {
+            if (name.length() < 2) {
                 maskedName = name;
-            } else if (name.length() == 2) {
+            } else if (name.length() < 3) {
                 maskedName = masker.maskString(name, 1, 0);
-            } else if (name.length() > 2 && name.length() < 5) {
+            } else if (name.length() < 5) {
                 maskedName = masker.maskString(name, 1, 1);
             } else {
                 maskedName = masker.maskString(name, 2, 2);
